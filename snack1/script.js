@@ -23,10 +23,13 @@ if(word1.length < word2.length) {
     // la prima parola è più corta
 
     // - stampa la prima
-    resultElement.innerText = word1;
+    resultElement.innerText = `La parola "${word1}" è più corta della parola "${word2}" `;
 
+} else if (word1.length > word2.length) {
+    // stampa la seconda
+    resultElement.innerText = `La parola "${word2}" è più corta della parola "${word1}" `;
 
 } else {
-    // stampa la seconda
-    resultElement.innerText = word2;
+    resultElement.innerText = `La parola "${word1}" ha la stessa lunghezza della parola "${word2}" `;
+
 }
