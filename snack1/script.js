@@ -19,6 +19,12 @@ const word2 = prompt("Inserisci la seconda parola");
 
 const resultElement = document.querySelector("#result");
 
+// controlli
+if(word1 == null || word2 == null) {
+    alert("Ricarica la pagina e inserisci entrambe le parole");
+}
+
+
 if(word1.length < word2.length) {
     // la prima parola è più corta
 
