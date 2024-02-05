@@ -19,12 +19,22 @@ for (let i = 0; i < 6 ; i++) {
     const number = Number(prompt(`Inserisci il ${i + 1}° numero`));  
     
 
-    // Solo se è dispari inseriscilo nell’array.
-    if(number % 2 != 0) {
+    // validazione
+    if(number == null || isNaN(number)){
+        
+        alert("Non hai inserito un numero, questo non verrà contato");
 
-        numberList.push(number);
+    } else {
+
+        // Solo se è dispari inseriscilo nell’array.
+        if(number % 2 != 0) {
+            numberList.push(number);
+        }
 
     }
+
+
+    
 
 }
 
