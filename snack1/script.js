@@ -20,7 +20,7 @@ const word2 = prompt("Inserisci la seconda parola");
 const resultElement = document.querySelector("#result");
 
 // controlli
-if(word1 == null || word2 == null) {
+if(word1 == null  word2 == null) {
     alert("Ricarica la pagina e inserisci entrambe le parole");
 }
 
